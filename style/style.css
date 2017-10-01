@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-image: url("../img/bg.jpg");
+  background-size: 60%;
+  background-position: top; }
+
+nav {
+  height: 8vh;
+  background-color: #464445;
+  box-shadow: 0px 5px 10px black; }
+
+.content {
+  width: 80%;
+  margin: auto; }
+  .content .logo img {
+    height: 7vh;
+    margin: 0.5vh 0px; }
+
+/*# sourceMappingURL=style.css.map */
