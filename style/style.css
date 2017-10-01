@@ -1,7 +1,24 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(../../fonts/Roboto-Regular.ttf); }
+@font-face {
+  font-family: 'Raleway';
+  src: url(../../fonts/Raleway-Regular.ttf); }
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Roboto'; }
+
+h1, h2, h3 {
+  font-family: 'Raleway'; }
+
+p {
+  font-size: 1.2em; }
+
+a {
+  text-decoration: none;
+  color: black; }
 
 body {
   background-image: url("../img/bg.jpg");
@@ -11,7 +28,19 @@ body {
 nav {
   height: 8vh;
   background-color: #464445;
-  box-shadow: 0px 5px 10px black; }
+  box-shadow: 0 5px 10px #1c1c1c; }
+  nav span {
+    float: right; }
+    nav span a {
+      font-size: 2em;
+      font-family: Raleway;
+      color: white;
+      display: inline-block;
+      height: 8vh;
+      padding-top: 2.5vh;
+      padding: 40px; }
+      nav span a:hover {
+        border-bottom: 5px solid #80D8FE; }
 
 .content {
   width: 80%;
