@@ -4,22 +4,22 @@
 
 <section class="forside-section">
   <h1>Mine nyeste projekter</h1>
-  <figure>
+  <figure class="forside-fig">
     <img>
     <figcaption></figcaption>
   </figure>
 
-  <figure>
+  <figure class="forside-fig">
     <img>
     <figcaption></figcaption>
   </figure>
 
-  <figure>
+  <figure class="forside-fig">
     <img>
     <figcaption></figcaption>
   </figure>
 
-  <figure>
+  <figure class="forside-fig">
     <img>
     <figcaption></figcaption>
   </figure>
