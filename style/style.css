@@ -1,20 +1,25 @@
 @font-face {
   font-family: 'Roboto';
-  src: url(../../fonts/Roboto-Regular.ttf); }
+  src: url(../fonts/Roboto-Regular.ttf); }
 @font-face {
   font-family: 'Raleway';
-  src: url(../../fonts/Raleway-Regular.ttf); }
+  src: url(../fonts/Raleway-Regular.ttf); }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto'; }
+  font-family: 'Roboto', sans-serif; }
 
 h1, h2, h3 {
-  font-family: 'Raleway'; }
+  font-family: 'Raleway', sans-serif; }
 
 p {
   font-size: 1.2em; }
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.4em;
+  margin-bottom: 30px; }
 
 a {
   text-decoration: none;
@@ -47,6 +52,84 @@ nav {
   margin: auto; }
   .content .logo img {
     height: 7vh;
-    margin: 0.5vh 0px; }
+    margin: 0.5vh 0; }
+
+main {
+  min-height: calc(100vh - 8vh - 60px - 120px);
+  width: 80%;
+  margin: auto;
+  margin-top: 120px; }
+
+.front-logo-big {
+  width: 100%;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 150px; }
+  .front-logo-big img {
+    width: 30%;
+    margin-left: 35%; }
+
+section {
+  width: 100%;
+  min-height: 300px;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 20px; }
+
+.bottom-stribe .first, .bottom-stribe .second, .bottom-stribe .third, .bottom-stribe .fourth {
+  width: 25%;
+  height: 15px;
+  float: left; }
+.bottom-stribe .first {
+  background-color: #80D8FE; }
+.bottom-stribe .second {
+  background-color: #FFFF8D; }
+.bottom-stribe .third {
+  background-color: #CDFF90; }
+.bottom-stribe .fourth {
+  background-color: #FF80AB; }
+
+.forside-stribe {
+  width: 1720px;
+  margin: auto; }
+
+.forside-section {
+  width: 1720px;
+  margin: auto;
+  padding-bottom: 30px; }
+
+figure {
+  margin: 0;
+  padding: 0;
+  background-color: red;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  margin-right: 20px;
+  border-radius: 100%;
+  position: relative; }
+  figure:last-child {
+    margin-right: 0; }
+  figure img {
+    background-color: #80D8FE;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    position: absolute; }
+  figure figcaption {
+    background-color: pink;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0; }
+
+footer {
+  width: 100%;
+  height: 60px;
+  text-align: center; }
+  footer p {
+    font-size: 1.5em;
+    color: grey;
+    line-height: 60px;
+    display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */
