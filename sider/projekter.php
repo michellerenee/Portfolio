@@ -1,72 +1,75 @@
-<section>
+<section class="no-padding-right">
   <h1>Mine projekter</h1>
   <figure>
-    <img>
-    <figcaption></figcaption>
+    <a href="./?side=projekt">
+      <img>
+      <figcaption></figcaption>
+    </a>
   </figure>
 
   <figure>
-    <img>
-    <figcaption></figcaption>
+    <a href="#">
+      <img>
+      <figcaption></figcaption>
+    </a>
   </figure>
 
   <figure>
-    <img>
-    <figcaption></figcaption>
+    <a href="#">
+      <img>
+      <figcaption></figcaption>
+    </a>
   </figure>
 
   <figure>
-    <img>
-    <figcaption></figcaption>
-  </figure>
-  <figure>
-    <img>
-    <figcaption></figcaption>
+    <a href="#">
+      <img>
+      <figcaption></figcaption>
+    </a>
   </figure>
 
   <figure>
-    <img>
-    <figcaption></figcaption>
+    <a href="#">
+      <img>
+      <figcaption></figcaption>
+    </a>
   </figure>
 
   <figure>
-    <img>
-    <figcaption></figcaption>
+    <a href="#">
+      <img>
+      <figcaption></figcaption>
+    </a>
   </figure>
 
   <figure>
-    <img>
-    <figcaption></figcaption>
+    <a href="#">
+      <img>
+      <figcaption></figcaption>
+    </a>
   </figure>
 
   <figure>
-    <img>
-    <figcaption></figcaption>
+    <a href="#">
+      <img>
+      <figcaption></figcaption>
+    </a>
   </figure>
 
   <figure>
-    <img>
-    <figcaption></figcaption>
-  </figure>
-  <figure>
-    <img>
-    <figcaption></figcaption>
+    <a href="#">
+      <img>
+      <figcaption></figcaption>
+    </a>
   </figure>
 
   <figure>
-    <img>
-    <figcaption></figcaption>
+    <a href="#">
+      <img>
+      <figcaption></figcaption>
+    </a>
   </figure>
 
-  <figure>
-    <img>
-    <figcaption></figcaption>
-  </figure>
-
-  <figure>
-    <img>
-    <figcaption></figcaption>
-  </figure>
 </section>
 <div class="bottom-stribe">
   <div class="first"></div>

@@ -24,10 +24,12 @@ $side_sti = 'sider/' . strtolower($side) . '.php';
   <div class="content">
     <a class="logo" href="./"><img src="img/logo.png"></a>
     <span>
-            <a href="./">Hjem</a>
-            <a href="./?side=projekter">Projekter</a>
-            <a href="./?side=ommig">Om mig</a>
-            <a href="./?side=kontakt">Kontakt</a>
+            <a class="nav1 <?php if(!isset($_GET['side'])){ echo 'active1'; } ?>" href="./">Hjem</a>
+            <a class="nav2 <?php if($_GET['side'] == 'projekter'){ echo 'active2'; } ?>" href="
+            ./?side=projekter">Projekter</a>
+            <a class="nav3 <?php if($_GET['side'] == 'ommig'){ echo 'active3'; } ?>" href="./?side=ommig">Om mig</a>
+            <a class="nav4 <?php if($_GET['side'] == 'kontakt'){ echo 'active4'; } ?>" href="
+            ./?side=kontakt">Kontakt</a>
         </span>
   </div><!-- content slut -->
 </nav>

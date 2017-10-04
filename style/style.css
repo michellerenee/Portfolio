@@ -14,16 +14,25 @@ h1, h2, h3 {
   font-family: 'Raleway', sans-serif; }
 
 p {
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  margin-bottom: 15px; }
 
 h1 {
   font-family: 'Raleway', sans-serif;
-  font-size: 2.4em;
-  margin-bottom: 30px; }
+  font-size: 2em;
+  margin-bottom: 30px;
+  font-weight: normal; }
+
+h2 {
+  font-size: 2em;
+  font-weight: normal; }
 
 a {
   text-decoration: none;
   color: black; }
+
+.block {
+  clear: both; }
 
 body {
   background-image: url("../img/bg.jpg");
@@ -37,15 +46,21 @@ nav {
   nav span {
     float: right; }
     nav span a {
-      font-size: 2em;
-      font-family: Raleway;
+      font-size: 1.6em;
+      font-family: 'Raleway', sans-serif;
       color: white;
       display: inline-block;
       height: 8vh;
-      padding-top: 2.5vh;
-      padding: 40px; }
-      nav span a:hover {
-        border-bottom: 5px solid #80D8FE; }
+      padding: 40px;
+      padding-top: 2.5vh; }
+    nav span .nav1:hover, nav span .active1 {
+      border-bottom: 6px solid #80D8FE; }
+    nav span .nav2:hover, nav span .active2 {
+      border-bottom: 6px solid #FFFF8D; }
+    nav span .nav3:hover, nav span .active3 {
+      border-bottom: 6px solid #CDFF90; }
+    nav span .nav4:hover, nav span .active4 {
+      border-bottom: 6px solid #FF80AB; }
 
 .content {
   width: 80%;
@@ -63,81 +78,151 @@ main {
 .front-logo-big {
   width: 100%;
   margin: auto;
-  padding-top: 100px;
-  padding-bottom: 150px; }
+  padding-top: 30px;
+  padding-bottom: 50px; }
   .front-logo-big img {
     width: 30%;
     margin-left: 35%; }
 
 section {
   width: 100%;
-  min-height: 300px;
   background-color: rgba(255, 255, 255, 0.95);
-  padding: 20px; }
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(62, 62, 62, 0.47); }
 
-.bottom-stribe .first, .bottom-stribe .second, .bottom-stribe .third, .bottom-stribe .fourth {
-  width: 25%;
+.no-padding-right {
+  padding-right: 0; }
+
+.bottom-stribe {
   height: 15px;
-  float: left; }
-.bottom-stribe .first {
-  background-color: #80D8FE; }
-.bottom-stribe .second {
-  background-color: #FFFF8D; }
-.bottom-stribe .third {
-  background-color: #CDFF90; }
-.bottom-stribe .fourth {
-  background-color: #FF80AB; }
+  margin-bottom: 30px;
+  box-shadow: 5px 5px 10px rgba(62, 62, 62, 0.47); }
+  .bottom-stribe .first, .bottom-stribe .second, .bottom-stribe .third, .bottom-stribe .fourth {
+    width: 25%;
+    height: 15px;
+    float: left; }
+  .bottom-stribe .first {
+    background-color: #80D8FE; }
+  .bottom-stribe .second {
+    background-color: #FFFF8D; }
+  .bottom-stribe .third {
+    background-color: #CDFF90; }
+  .bottom-stribe .fourth {
+    background-color: #FF80AB; }
 
 .forside-stribe {
-  width: 1720px;
+  width: 80%;
   margin: auto; }
 
 .forside-section {
-  width: 1720px;
+  width: 80%;
   margin: auto;
   padding-bottom: 30px; }
+  .forside-section figure {
+    width: calc(25% - 20px);
+    height: 250px; }
+  .forside-section .forside-link {
+    display: inline-block;
+    float: right;
+    background-color: #CDFF90;
+    padding: 10px 20px; }
+    .forside-section .forside-link:hover {
+      color: white; }
 
 figure {
   margin: 0;
   padding: 0;
   background-color: red;
-  width: 300px;
-  height: 300px;
+  width: calc(20% - 20px);
+  height: 200px;
   display: inline-block;
-  margin-right: 20px;
-  border-radius: 100%;
+  margin-right: 16px;
   position: relative;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  box-shadow: 2px 3px 15px #636363; }
+  figure:hover {
+    box-shadow: 2px 3px 15px #393939; }
   figure:last-child {
     margin-right: 0; }
   figure img {
     background-color: #80D8FE;
     width: 100%;
     height: 100%;
-    border-radius: 100%;
     position: absolute; }
   figure figcaption {
     background-color: pink;
-    height: 100px;
+    height: 70px;
     width: 100%;
     position: absolute;
     bottom: 0; }
 
-.ommig1, .ommig2 {
-  width: calc(50% - 10px);
-  margin-right: 10px;
-  background-color: #FF80AB;
-  height: 100px;
-  display: inline-block; }
+.ommig1, .ommig2, .kontakt1, .kontakt2 {
+  width: calc(50% - 15px);
+  margin-right: 15px;
+  display: inline-block;
+  float: left; }
+  .ommig1 h2, .ommig2 h2, .kontakt1 h2, .kontakt2 h2 {
+    margin-bottom: 20px; }
+  .ommig1 .ommig-tekst, .ommig2 .ommig-tekst, .kontakt1 .ommig-tekst, .kontakt2 .ommig-tekst {
+    width: calc(100% - 340px);
+    margin-right: 30px;
+    float: left; }
+  .ommig1 img, .ommig2 img, .kontakt1 img, .kontakt2 img {
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    float: left;
+    border-radius: 100%; }
+  .ommig1 .erfaring, .ommig2 .erfaring, .kontakt1 .erfaring, .kontakt2 .erfaring {
+    margin-bottom: 40px; }
+    .ommig1 .erfaring .title, .ommig2 .erfaring .title, .kontakt1 .erfaring .title, .kontakt2 .erfaring .title {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.6em; }
+    .ommig1 .erfaring .dato, .ommig2 .erfaring .dato, .kontakt1 .erfaring .dato, .kontakt2 .erfaring .dato {
+      float: right;
+      color: #575757; }
 
-.ommig2 {
-  margin-left: 10px;
-  margin-right: 0; }
+.ommig2, .kontakt2 {
+  margin-left: 15px;
+  margin-right: 0;
+  clear: right; }
+
+form .form1, form .form2 {
+  width: 50%;
+  float: left; }
+  form .form1 input, form .form1 label, form .form1 textarea, form .form2 input, form .form2 label, form .form2 textarea {
+    width: calc(100% - 10px);
+    height: 40px;
+    margin-bottom: 15px; }
+  form .form1 label, form .form2 label {
+    font-family: 'Raleway', sans-serif; }
+  form .form1 input, form .form1 textarea, form .form2 input, form .form2 textarea {
+    border: 2px solid black; }
+form .form2 textarea, form .form2 input, form .form2 label {
+  margin-left: 10px; }
+form .form2 textarea {
+  height: 190px;
+  resize: none; }
+form .form2 input {
+  width: 100px;
+  float: right;
+  background-color: #CDFF90;
+  border: none;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4em; }
+  form .form2 input:hover {
+    color: white;
+    cursor: hand; }
+
+input, textarea {
+  padding: 5px; }
 
 footer {
   width: 100%;
   height: 60px;
-  text-align: center; }
+  text-align: center;
+  display: block; }
   footer p {
     font-size: 1.5em;
     color: grey;

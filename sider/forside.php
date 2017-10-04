@@ -3,6 +3,7 @@
 </div>
 
 <section class="forside-section">
+  <a class="forside-link" href="./?side=projekter">Se alle projekter</a>
   <h1>Mine nyeste projekter</h1>
   <figure class="forside-fig">
     <img>
