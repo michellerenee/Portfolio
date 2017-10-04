@@ -307,6 +307,21 @@ input, textarea{
 }
 
 
+// Projekt styling
+.art1{
+  width: calc(55% - 4px);
+  float: left;
+}
+
+.art2{
+  width: 45%;
+  float: left;
+
+  img{
+    width: 100%;
+  }
+}
+
 // Footer styling
 footer{
   width: 100%;
