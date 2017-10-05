@@ -235,6 +235,14 @@ figure:hover figcaption{
     margin-bottom: 20px;
   }
 
+  p a{
+    color: darken($primary-color1, 50%);
+
+    &:hover{
+      color: darken($primary-color1, 30%);
+    }
+  }
+
   .ommig-tekst{
     width: calc(100% - 340px);
     margin-right: 30px;

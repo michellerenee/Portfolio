@@ -180,6 +180,10 @@ figure:hover figcaption {
   float: left; }
   .ommig1 h2, .ommig2 h2, .kontakt1 h2, .kontakt2 h2 {
     margin-bottom: 20px; }
+  .ommig1 p a, .ommig2 p a, .kontakt1 p a, .kontakt2 p a {
+    color: #01587e; }
+    .ommig1 p a:hover, .ommig2 p a:hover, .kontakt1 p a:hover, .kontakt2 p a:hover {
+      color: #029fe3; }
   .ommig1 .ommig-tekst, .ommig2 .ommig-tekst, .kontakt1 .ommig-tekst, .kontakt2 .ommig-tekst {
     width: calc(100% - 340px);
     margin-right: 30px;
