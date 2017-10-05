@@ -11,6 +11,9 @@
     <p>Det første billede er et billede af, hvordan min prototype så ud. Det næste billede er af hvordan siden kom
       til at se ud.</p>
     <p>Jeg har egentlig holdt mig meget godt til mit layout, men har lavet nogle små ændringer undervejs.</p>
+    <h2>Resultatet</h2>
+    <p>Jeg synes mit resultat er okay. Der er et eller andet jeg gerne ville have lavet anderledes, men jeg kan
+      simpelthen ikke finde ud af, hvad det skulle være. Ellers havde jeg allerede lavet det om.</p>
   </article>
 
   <article class="art2">

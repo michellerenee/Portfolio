@@ -101,14 +101,18 @@ section {
     width: 25%;
     height: 15px;
     float: left; }
-  .bottom-stribe .first {
-    background-color: #80D8FE; }
-  .bottom-stribe .second {
-    background-color: #FFFF8D; }
-  .bottom-stribe .third {
-    background-color: #CDFF90; }
-  .bottom-stribe .fourth {
-    background-color: #FF80AB; }
+
+.first {
+  background-color: #80D8FE; }
+
+.second {
+  background-color: #FFFF8D; }
+
+.third {
+  background-color: #CDFF90; }
+
+.fourth {
+  background-color: #FF80AB; }
 
 .forside-stribe {
   width: 80%;
@@ -244,6 +248,11 @@ input, textarea {
   width: calc(55% - 4px);
   float: left;
   padding-right: 30px; }
+  .art1 ul {
+    margin-bottom: 20px;
+    font-size: 1.2em; }
+    .art1 ul li {
+      margin-left: 20px; }
 
 .art2 {
   width: 45%;

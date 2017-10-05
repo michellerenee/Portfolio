@@ -134,12 +134,12 @@ section{
     height: 15px;
     float: left;
   }
-
-  .first{background-color: $primary-color1}
-  .second{background-color: $primary-color2}
-  .third{background-color: $primary-color3}
-  .fourth{background-color: $primary-color4}
 }
+
+.first{background-color: $primary-color1}
+.second{background-color: $primary-color2}
+.third{background-color: $primary-color3}
+.fourth{background-color: $primary-color4}
 
 .forside-stribe{
   width: 80%;
@@ -342,6 +342,15 @@ input, textarea{
   width: calc(55% - 4px);
   float: left;
   padding-right: 30px;
+
+  ul {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+
+    li{
+      margin-left: 20px;
+    }
+  }
 }
 
 .art2{

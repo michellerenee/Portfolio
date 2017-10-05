@@ -4,10 +4,10 @@
     <p>Hvis du har lyst til at kontakte mig, kan du enten kontakte mig gennem en af følgende fire muligheder, eller
       gennem kontaktformularen til højre.</p>
 
-    <p>Logo og tekst</p>
-    <p>Logo og tekst</p>
-    <p>Logo og tekst</p>
-    <p>Logo og tekst</p>
+    <p>Tlf: 53635338</p>
+    <p>Mail: michellereneejensen@hotmail.com</p>
+    <p><a href="https://www.linkedin.com/in/michelle-ren%C3%A9e-jensen-7b200678/" target="_blank">LinkedIn</a></p>
+    <p><a href="https://github.com/michellerenee" target="_blank">GitHub</a></p>
   </section>
   <div class="bottom-stribe">
     <div class="first"></div>
