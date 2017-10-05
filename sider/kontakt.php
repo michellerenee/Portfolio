@@ -20,6 +20,28 @@
 <div class="kontakt2">
   <section>
     <form method="post">
+      <?php
+      $fejlbesked = '';
+      $success = '';
+
+      if(isset($_POST)){
+        if(empty($_POST['navn']) || empty($_POST['emne']) || empty($_POST['mail']) || empty($_POST['besked'])){
+          $fejlbesked = '<p class="kontakt-fejl-besked">Alle felterne skal være udfyldt</p>';
+        }
+        else{
+          $navn = $_POST['navn'];
+          $emne = $_POST['emne'];
+          $mail = $_POST['mail'];
+          $besked = $_POST['besked'];
+
+          mail('michellereneejensen@hotmail.com', $emne, 'Besked: '. $besked, 'From: '.$navn);
+          $success = '<p class="kontakt-success-besked">Beskeden blev sendt!</p>';
+        }
+      }
+
+      echo $fejlbesked;
+      echo $success;
+      ?>
       <div class="form1">
         <label for="navn">Navn</label>
         <input id="navn" type="text" name="navn" value="">

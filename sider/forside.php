@@ -2,12 +2,12 @@
   <img src="../img/logo.png">
 </div>
 
-<section class="forside-section">
+<section class="forside-section no-padding-right">
   <a class="forside-link" href="./?side=projekter">Se alle projekter</a>
   <h1>Mine nyeste projekter</h1>
   <figure class="forside-fig">
     <img>
-    <figcaption></figcaption>
+    <figcaption><h1>Billede 1</h1><p>Lidt forklaring</p></figcaption>
   </figure>
 
   <figure class="forside-fig">

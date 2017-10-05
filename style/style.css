@@ -125,9 +125,12 @@ section {
     display: inline-block;
     float: right;
     background-color: #CDFF90;
-    padding: 10px 20px; }
+    padding: 10px 20px;
+    margin-right: 20px;
+    box-shadow: 2px 2px 10px #bdbdbd; }
     .forside-section .forside-link:hover {
-      color: white; }
+      color: white;
+      box-shadow: 2px 2px 10px #636363; }
 
 figure {
   margin: 0;
@@ -139,9 +142,9 @@ figure {
   margin-right: 16px;
   position: relative;
   margin-bottom: 20px;
-  box-shadow: 2px 3px 15px #636363; }
+  box-shadow: 5px 5px 15px #bdbdbd; }
   figure:hover {
-    box-shadow: 2px 3px 15px #393939; }
+    box-shadow: 5px 5px 15px #636363; }
   figure:last-child {
     margin-right: 0; }
   figure img {
@@ -154,7 +157,14 @@ figure {
     height: 70px;
     width: 100%;
     position: absolute;
-    bottom: 0; }
+    bottom: 0;
+    padding: 10px; }
+    figure figcaption h1 {
+      font-size: 1.4em;
+      margin: 0; }
+    figure figcaption p {
+      font-size: 1em;
+      margin: 0; }
 
 .ommig1, .ommig2, .kontakt1, .kontakt2 {
   width: calc(50% - 15px);
@@ -214,6 +224,12 @@ form .form2 input {
   form .form2 input:hover {
     color: white;
     cursor: hand; }
+
+.kontakt-fejl-besked {
+  color: red; }
+
+.kontakt-success-besked {
+  color: green; }
 
 input, textarea {
   padding: 5px; }
