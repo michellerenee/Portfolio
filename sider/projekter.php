@@ -1,65 +1,30 @@
 <section class="no-padding-right">
   <h1>Mine projekter</h1>
   <figure>
-    <a href="./?side=projekt">
-      <img>
-      <figcaption></figcaption>
+    <a href="./?side=projekt-portfolio">
+      <img src="../img/portfolio1.jpg">
+      <figcaption><h1>Min portfolio</h1></figcaption>
     </a>
   </figure>
 
   <figure>
-    <a href="#">
-      <img>
-      <figcaption></figcaption>
+    <a href="./?side=projekt-ophavsret">
+      <img src="../img/pear-inc.jpg">
+      <figcaption><h1>Ophavsret tyveri</h1></figcaption>
     </a>
   </figure>
 
   <figure>
-    <a href="#">
-      <img>
-      <figcaption></figcaption>
+    <a href="./?side=projekt-foto">
+      <img src="../img/nyhavn.jpg">
+      <figcaption><h1>Fotoredigering</h1></figcaption>
     </a>
   </figure>
 
   <figure>
-    <a href="#">
+    <a href="./?side=projekt-cms">
       <img>
-      <figcaption></figcaption>
-    </a>
-  </figure>
-
-  <figure>
-    <a href="#">
-      <img>
-      <figcaption></figcaption>
-    </a>
-  </figure>
-
-  <figure>
-    <a href="#">
-      <img>
-      <figcaption></figcaption>
-    </a>
-  </figure>
-
-  <figure>
-    <a href="#">
-      <img>
-      <figcaption></figcaption>
-    </a>
-  </figure>
-
-  <figure>
-    <a href="#">
-      <img>
-      <figcaption></figcaption>
-    </a>
-  </figure>
-
-  <figure>
-    <a href="#">
-      <img>
-      <figcaption></figcaption>
+      <figcaption><h1>CMS system</h1></figcaption>
     </a>
   </figure>
 

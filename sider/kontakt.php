@@ -24,7 +24,7 @@
       $fejlbesked = '';
       $success = '';
 
-      if(isset($_POST)){
+      if(isset($_POST['send'])){
         if(empty($_POST['navn']) || empty($_POST['emne']) || empty($_POST['mail']) || empty($_POST['besked'])){
           $fejlbesked = '<p class="kontakt-fejl-besked">Alle felterne skal være udfyldt</p>';
         }
@@ -36,6 +36,7 @@
 
           mail('michellereneejensen@hotmail.com', $emne, 'Besked: '. $besked, 'From: '.$navn);
           $success = '<p class="kontakt-success-besked">Beskeden blev sendt!</p>';
+          $fejlbesked = '';
         }
       }
 
@@ -56,7 +57,7 @@
         <label for="besked">Besked</label>
         <textarea id="besked" name="besked"></textarea>
 
-        <input type="submit" value="Send">
+        <input type="submit" name="send" value="Send">
       </div>
     </form>
     <div class="block"></div>

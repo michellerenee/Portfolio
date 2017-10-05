@@ -24,7 +24,7 @@ h1 {
   font-weight: normal; }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: normal; }
 
 a {
@@ -166,6 +166,9 @@ figure {
       font-size: 1em;
       margin: 0; }
 
+figure:hover figcaption {
+  opacity: 0.9; }
+
 .ommig1, .ommig2, .kontakt1, .kontakt2 {
   width: calc(50% - 15px);
   margin-right: 15px;
@@ -187,7 +190,10 @@ figure {
     margin-bottom: 40px; }
     .ommig1 .erfaring .title, .ommig2 .erfaring .title, .kontakt1 .erfaring .title, .kontakt2 .erfaring .title {
       font-family: 'Raleway', sans-serif;
-      font-size: 1.6em; }
+      font-size: 1.6em;
+      margin: 0; }
+    .ommig1 .erfaring .sted, .ommig2 .erfaring .sted, .kontakt1 .erfaring .sted, .kontakt2 .erfaring .sted {
+      margin: 0; }
     .ommig1 .erfaring .dato, .ommig2 .erfaring .dato, .kontakt1 .erfaring .dato, .kontakt2 .erfaring .dato {
       float: right;
       color: #575757; }
@@ -236,7 +242,8 @@ input, textarea {
 
 .art1 {
   width: calc(55% - 4px);
-  float: left; }
+  float: left;
+  padding-right: 30px; }
 
 .art2 {
   width: 45%;

@@ -2,10 +2,15 @@
   <section>
     <h1>Om mig</h1>
     <article class="ommig-tekst">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad autem, ea minima omnis quia unde ut veritatis voluptatem. Distinctio eveniet, id in maxime nesciunt placeat quasi quo sunt vel.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab, architecto at corporis debitis doloremque eius esse illum iure laborum nesciunt nostrum numquam saepe totam voluptatem. Exercitationem nemo officiis veritatis.</p>
+      <p>Mit navn er Michelle Renee. Jeg er 23 år gammel, og bor i Ballerup. Jeg har altid været meget kreativ -
+        siden jeg kun var et par år gammel. Jeg har lavet al verdens ting ved at male, tegne, klippe/klistre,
+        strikke, og jeg kunne blive ved.</p>
+      <p>Det er først i løbet af de sidste par år, jeg har fået øjnene op for grafisk arbejde.</p>
+      <p>Jeg har taget en
+        uddannelse som webintegrator, hvorefter jeg fandt ud af, at jeg havde lyst til at viderudvikle mine evner inden
+        for grafisk arbejde. Derfor har jeg valgt at studere multimediedesign.</p>
     </article>
-    <img>
+    <img src="../img/mig.jpg">
     <div class="block"></div>
   </section>
   <div class="bottom-stribe">
@@ -146,6 +151,17 @@
 <div class="ommig2">
   <section>
     <h1>Kvalifikationer</h1>
+    <p class="title">HTML</p>
+    <p class="title">CSS</p>
+    <p class="title">PHP</p>
+    <p class="title">JavaScript</p>
+    <p class="title">jQuery</p>
+    <p class="title">JSON</p>
+    <p class="title">PhpStorm</p>
+    <p class="title">DreamWeaver</p>
+    <p class="title">Photoshop</p>
+    <p class="title">ExperinceDesign</p>
+    <p class="title">Office pakken</p>
   </section>
   <div class="bottom-stribe">
     <div class="first"></div>

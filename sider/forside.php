@@ -6,23 +6,31 @@
   <a class="forside-link" href="./?side=projekter">Se alle projekter</a>
   <h1>Mine nyeste projekter</h1>
   <figure class="forside-fig">
-    <img>
-    <figcaption><h1>Billede 1</h1><p>Lidt forklaring</p></figcaption>
+    <a href="./?side=projekt-portfolio">
+      <img src="../img/portfolio1.jpg">
+      <figcaption><h1>Min portfolio</h1></figcaption>
+    </a>
   </figure>
 
   <figure class="forside-fig">
-    <img>
-    <figcaption></figcaption>
+    <a href="./?side=projekt-ophavsret">
+      <img src="../img/pear-inc.jpg">
+      <figcaption><h1>Ophavsret tyveri</h1></figcaption>
+    </a>
   </figure>
 
   <figure class="forside-fig">
-    <img>
-    <figcaption></figcaption>
+    <a href="./?side=projekt-foto">
+      <img src="../img/nyhavn.jpg">
+      <figcaption><h1>Fotoredigering</h1></figcaption>
+    </a>
   </figure>
 
   <figure class="forside-fig">
-    <img>
-    <figcaption></figcaption>
+    <a href="./?side=projekt-cms">
+      <img>
+      <figcaption><h1>CMS system</h1></figcaption>
+    </a>
   </figure>
 </section>
 <div class="bottom-stribe forside-stribe">
