@@ -1,3 +1,5 @@
+<!-- Hvis du kører alle undersiderne igennem en validator, kan den muligvis sige at der mangler en doctype og head,
+men det er fordi indholdet bliver hentet ind på index-filen, hvor de to ting er -->
 <section>
   <h1>Min portfolio</h1>
   <article class="art1">
@@ -16,9 +18,9 @@
       simpelthen ikke finde ud af, hvad det skulle være. Ellers havde jeg allerede lavet det om.</p>
   </article>
 
-  <article class="art2">
-    <img src="../img/portfolio1.jpg">
-  </article>
+  <div class="art2">
+    <img src="../img/portfolio1.jpg" alt="billede af min portfolio prototype">
+  </div>
   <div class="block"></div>
 </section>
 

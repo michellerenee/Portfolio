@@ -69,7 +69,7 @@ nav {
     height: 7vh;
     margin: 0.5vh 0; }
 
-main {
+#main {
   min-height: calc(100vh - 8vh - 60px - 120px);
   width: 80%;
   margin: auto;
@@ -136,10 +136,9 @@ section {
       color: white;
       box-shadow: 2px 2px 10px #636363; }
 
-figure {
+.figure {
   margin: 0;
   padding: 0;
-  background-color: red;
   width: calc(20% - 20px);
   height: 200px;
   display: inline-block;
@@ -147,31 +146,32 @@ figure {
   position: relative;
   margin-bottom: 20px;
   box-shadow: 5px 5px 15px #bdbdbd; }
-  figure:hover {
+  .figure:hover {
     box-shadow: 5px 5px 15px #636363; }
-  figure:last-child {
+  .figure:last-child {
     margin-right: 0; }
-  figure img {
-    background-color: #80D8FE;
+  .figure img {
     width: 100%;
     height: 100%;
     position: absolute; }
-  figure figcaption {
-    background-color: pink;
+  .figure figcaption {
     height: 70px;
     width: 100%;
     position: absolute;
     bottom: 0;
     padding: 10px; }
-    figure figcaption h1 {
+    .figure figcaption h1 {
       font-size: 1.4em;
       margin: 0; }
-    figure figcaption p {
+    .figure figcaption p {
       font-size: 1em;
       margin: 0; }
 
 figure:hover figcaption {
   opacity: 0.9; }
+
+.forside-fig {
+  width: calc(25% - 20px); }
 
 .ommig1, .ommig2, .kontakt1, .kontakt2 {
   width: calc(50% - 15px);
@@ -191,7 +191,6 @@ figure:hover figcaption {
   .ommig1 img, .ommig2 img, .kontakt1 img, .kontakt2 img {
     width: 300px;
     height: 300px;
-    background-color: green;
     float: left;
     border-radius: 100%; }
   .ommig1 .erfaring, .ommig2 .erfaring, .kontakt1 .erfaring, .kontakt2 .erfaring {
@@ -237,7 +236,7 @@ form .form2 input {
   font-size: 1.4em; }
   form .form2 input:hover {
     color: white;
-    cursor: hand; }
+    cursor: pointer; }
 
 .kontakt-fejl-besked {
   color: red; }

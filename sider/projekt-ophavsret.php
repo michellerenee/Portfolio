@@ -1,3 +1,5 @@
+<!-- Hvis du kører alle undersiderne igennem en validator, kan den muligvis sige at der mangler en doctype og head,
+men det er fordi indholdet bliver hentet ind på index-filen, hvor de to ting er -->
 <section>
   <h1>Ophavsret</h1>
   <article class="art1">
@@ -11,9 +13,9 @@
     </p>
   </article>
 
-  <article class="art2">
-    <img src="../img/pear-inc.jpg">
-  </article>
+  <div class="art2">
+    <img src="../img/pear-inc.jpg" alt="Det oprindelige og mit nye logo til opgaven">
+  </div>
   <div class="block"></div>
 </section>
 

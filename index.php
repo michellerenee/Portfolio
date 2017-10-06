@@ -13,16 +13,15 @@ $side_sti = 'sider/' . strtolower($side) . '.php';
 ?>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Min portfolio</title>
   <link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="icon" href="img/fav.png">
 </head>
 <body>
 <nav>
   <div class="content">
-    <a class="logo" href="./"><img src="img/logo.png"></a>
+    <a class="logo" href="./"><img src="img/logo.png" alt="Michelle Renee Logo"></a>
     <span>
             <a class="nav1 <?php if(!isset($_GET['side'])){ echo 'active1'; } ?>" href="./">Hjem</a>
             <a class="nav2 <?php if($_GET['side'] == 'projekter'){ echo 'active2'; } ?>" href="
@@ -34,7 +33,7 @@ $side_sti = 'sider/' . strtolower($side) . '.php';
   </div><!-- content slut -->
 </nav>
 
-<main>
+<div id="main">
   <?php
   if (file_exists($side_sti)){
     include $side_sti;
@@ -43,7 +42,7 @@ $side_sti = 'sider/' . strtolower($side) . '.php';
     echo 'Fejl. Siden findes ikke';
   }
   ?>
-</main>
+</div>
 
 <footer>
   <p>Michelle Renee Jensen</p>

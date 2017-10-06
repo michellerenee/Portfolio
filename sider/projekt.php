@@ -1,3 +1,5 @@
+<!-- Hvis du kører alle undersiderne igennem en validator, kan den muligvis sige at der mangler en doctype og head,
+men det er fordi indholdet bliver hentet ind på index-filen, hvor de to ting er -->
 <section>
   <h1>Projektnavn</h1>
   <article class="art1">

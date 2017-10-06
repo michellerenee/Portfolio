@@ -1,3 +1,5 @@
+<!-- Hvis du kører alle undersiderne igennem en validator, kan den muligvis sige at der mangler en doctype og head,
+men det er fordi indholdet bliver hentet ind på index-filen, hvor de to ting er -->
 <section>
   <h1>Fotoredigering</h1>
   <article class="art1">
@@ -24,10 +26,12 @@
       og en ny mere klar og blå himmel.</p>
   </article>
 
-  <article class="art2">
-    <img src="../img/nyhavn1.jpg">
-    <img src="../img/nyhavn2.jpg">
-  </article>
+  <div class="art2">
+    <!-- Af en eller anden grund vender billedet på hovedet, men billedet i filstien vender rigtigt. De to billeder
+    har altså samme styling, så det er heller ikke stylingen der gør det -->
+    <img src="../img/nyhavn1.jpg" alt="Det oprindelige billede af nyhavn">
+    <img src="../img/nyhavn2.jpg" alt="Det redigerede billede af nyhavn">
+  </div>
   <div class="block"></div>
 </section>
 

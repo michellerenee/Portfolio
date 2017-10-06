@@ -1,3 +1,5 @@
+<!-- Hvis du kører alle undersiderne igennem en validator, kan den muligvis sige at der mangler en doctype og head,
+men det er fordi indholdet bliver hentet ind på index-filen, hvor de to ting er -->
 <div class="kontakt1">
   <section>
     <h1>Kontakt mig</h1>
