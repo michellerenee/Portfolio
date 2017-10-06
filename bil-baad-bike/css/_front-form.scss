@@ -1,0 +1,65 @@
+form{
+  margin-bottom: 0;
+
+  .row{
+    margin-bottom: 0;
+  }
+
+  input[type=text], input[type=tel], input[type=number], input[type=email], input[type=date], input[type=password], input[type=search], input[type=url], input[type=file], textarea, select{
+    color: $darkgray;
+    border: 1px solid $lightgray1;
+    border-radius: 2px;
+    background-color: $white;
+    height: 45px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+
+  input[type=file]{
+    padding-top: 10px;
+  }
+
+  textarea{
+    height: 150px;
+  }
+
+  input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+    border: none;
+    box-shadow: 0 0 5px rgba(255, 192, 0, 1);
+  }
+
+  input[type=text]:focus:not([readonly])+label{
+    color: $red;
+  }
+
+  input[type=submit], button{
+    border: none;
+    background-color: $lightgray1;
+    height: 45px;
+    line-height: 45px;
+    color: $darkgray;
+    border-radius: 0;
+    padding: 0px 30px;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+
+    &:hover{
+      background-color: $red;
+      color: $lightgray2;
+    }
+  }
+
+  input[type=checkbox]{
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+
+  label{
+    display: block;
+    font-family: 'Open Sans Bold', sans-serif;
+    color: $darkgray;
+    font-size: 14px;
+  }
+}

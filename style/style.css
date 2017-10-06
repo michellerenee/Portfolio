@@ -263,6 +263,11 @@ input, textarea {
   .art2 img {
     width: 100%; }
 
+.img-link img {
+  box-shadow: 5px 5px 15px #bdbdbd; }
+  .img-link img:hover {
+    box-shadow: 5px 5px 15px #636363; }
+
 footer {
   width: 100%;
   height: 60px;

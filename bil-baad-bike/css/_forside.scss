@@ -1,0 +1,45 @@
+.forside_knap1, .forside_knap2, .forside_knap3{
+  height: 150px;
+  color: $white;
+  margin-bottom: 30px;
+
+  .knap_icon{
+    width: auto;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+
+    i{
+      font-size: 7rem;
+      padding-bottom: 0;
+      font-weight: normal;
+    }
+  }
+
+  .knap_tekst{
+    width: auto;
+    margin: auto;
+    text-align: center;
+
+    p{
+      font-size: 2.2rem;
+      font-family: Raleway, Roboto, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+  }
+
+  &:hover{
+    color: $white;
+  }
+}
+
+.forside_knap1{
+  background-color: $purple;
+}
+
+.forside_knap2{
+  background-color: $dark_blue;
+}
+
+.forside_knap3{
+  background-color: $light_blue;
+}

@@ -15,10 +15,10 @@ men det er fordi indholdet bliver hentet ind på index-filen, hvor de to ting er
     </figure>
   </a>
 
-  <a class="figure forside-fig" href="./?side=projekt-ophavsret">
+  <a class="figure forside-fig" href="./?side=projekt-cms">
     <figure class="">
-      <img src="../img/pear-inc.jpg" alt="Billede af mit pear inc projekt">
-      <figcaption class="first"><h1>Ophavsret tyveri</h1></figcaption>
+      <img src="../img/cms-sm.jpg" alt="Billede af mit CMS forside">
+      <figcaption class="first"><h1>Mini CMS system</h1></figcaption>
     </figure>
   </a>
 

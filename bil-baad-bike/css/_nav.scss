@@ -1,0 +1,69 @@
+@mixin gradient($from_color, $to_color){
+  background: $to_color; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,$from_color,$to_color); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,$from_color,$to_color); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,$from_color,$to_color); /*Fx 3.6-15*/
+  background: linear-gradient(to right, $from_color, $to_color); /*Standard*/
+}
+
+nav{
+  background-color: $nav_bg;
+  height: 57px;
+  line-height: 48px;
+  text-align: right;
+
+  a{
+    color: $white;
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+    font-family: Raleway, Roboto, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+
+    &:hover{
+      height: 57px;
+      color: $light_blue;
+    }
+  }
+
+  #nav_scroll{
+    height: 56px;
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    overflow-y: hidden;
+    position: relative;
+    z-index:1;
+
+    #nav_arrow{
+      background-color: yellowgreen;
+      width: 100px;
+      height: 58px;
+      position: absolute;
+      top:0;
+      right: 0;
+      z-index: 100;
+      @include gradient(rgba(51, 47, 62, 0), rgba(51, 47, 62, 1));
+      line-height: 70px;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    height: 4px;
+    bottom: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: $nav_bg;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    background-color: $light_bg;
+  }
+}
+
+

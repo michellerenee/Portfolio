@@ -1,0 +1,367 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Oswald;
+  src: url(../fonts/Oswald/Oswald-Regular.ttf); }
+@font-face {
+  font-family: 'Oswald Bold';
+  src: url(../fonts/Oswald/Oswald-Bold.ttf); }
+@font-face {
+  font-family: 'Open Sans';
+  src: url(../fonts/Open_Sans/OpenSans-Regular.ttf); }
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url(../fonts/Open_Sans/OpenSans-Bold.ttf); }
+/* Colours */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #f0f0f0;
+  color: #353537;
+  font-family: 'Open Sans', sans-serif; }
+
+/* Videre-styling af materialize's styling p├Ñ .container */
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+  background-color: #ffffff;
+  min-height: 200px;
+  padding: 20px; }
+
+h1 {
+  font-size: 36px;
+  font-family: 'Oswald Bold', serif;
+  text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 10px; }
+
+h2 {
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+h3 {
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 10px;
+  /* Oswald i gr├Ñ box, Open Sans i footer*/ }
+
+p {
+  font-size: 14px;
+  line-height: 25px; }
+
+a {
+  color: #353537;
+  text-decoration: none; }
+  a:hover {
+    color: #801c1c; }
+
+hr {
+  border: 2px solid #353537;
+  margin-bottom: 10px; }
+
+hr.thin {
+  border: 1px solid #f0f0f0;
+  border-bottom: none;
+  margin-bottom: 20px; }
+
+.laes_mere {
+  display: block;
+  margin-top: 20px; }
+  .laes_mere a {
+    padding: 10px 30px;
+    background-color: #e6e6e6;
+    color: #777777;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-size: 13px; }
+    .laes_mere a:hover {
+      background-color: #801c1c;
+      color: #f0f0f0; }
+
+.darker {
+  color: #353537; }
+
+form {
+  margin-bottom: 0; }
+  form .row {
+    margin-bottom: 0; }
+  form input[type=text], form input[type=tel], form input[type=number], form input[type=email], form input[type=date], form input[type=password], form input[type=search], form input[type=url], form input[type=file], form textarea, form select {
+    color: #353537;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    background-color: #ffffff;
+    height: 45px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box; }
+  form input[type=file] {
+    padding-top: 10px; }
+  form textarea {
+    height: 150px; }
+  form input:not([type]):focus:not([readonly]), form input[type=text]:focus:not([readonly]), form input[type=password]:focus:not([readonly]), form input[type=email]:focus:not([readonly]), form input[type=url]:focus:not([readonly]), form input[type=time]:focus:not([readonly]), form input[type=date]:focus:not([readonly]), form input[type=datetime]:focus:not([readonly]), form input[type=datetime-local]:focus:not([readonly]), form input[type=tel]:focus:not([readonly]), form input[type=number]:focus:not([readonly]), form input[type=search]:focus:not([readonly]), form textarea.materialize-textarea:focus:not([readonly]) {
+    border: none;
+    box-shadow: 0 0 5px #ffc000; }
+  form input[type=text]:focus:not([readonly]) + label {
+    color: #801c1c; }
+  form input[type=submit], form button {
+    border: none;
+    background-color: #e6e6e6;
+    height: 45px;
+    line-height: 45px;
+    color: #353537;
+    border-radius: 0;
+    padding: 0px 30px;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase; }
+    form input[type=submit]:hover, form button:hover {
+      background-color: #801c1c;
+      color: #f0f0f0; }
+  form input[type=checkbox] {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 5px; }
+  form label {
+    display: block;
+    font-family: 'Open Sans Bold', sans-serif;
+    color: #353537;
+    font-size: 14px; }
+
+form p.fejlbesked {
+  font-style: italic;
+  color: #801c1c; }
+
+form p.success {
+  font-style: italic;
+  color: #cc9a00; }
+
+.space_left {
+  margin-left: 20px; }
+
+header {
+  margin-bottom: 40px; }
+
+nav {
+  background-color: #353537;
+  box-shadow: none;
+  height: 55px;
+  line-height: 55px;
+  border-bottom: 4px solid #ffc000;
+  margin-bottom: 20px; }
+  nav a {
+    font-family: 'Open Sans Bold', sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0px 10px;
+    height: 55px; }
+    nav a .material-icons {
+      display: inline;
+      font-size: 16px;
+      float: left;
+      margin-right: 3px; }
+    nav a:hover {
+      background-color: #ffc000;
+      color: #ffffff; }
+  nav .active {
+    background-color: #ffc000; }
+
+main div .breadcrumb {
+  margin-bottom: 20px; }
+  main div .breadcrumb span {
+    color: #353537; }
+  main div .breadcrumb span:not(:first-child)::before {
+    content: '/';
+    margin-right: 5px; }
+  main div .breadcrumb span:last-child {
+    color: #777777; }
+
+aside div {
+  background-color: #f0f0f0;
+  padding: 10px 20px; }
+  aside div button {
+    line-height: 58px; }
+  aside div .row {
+    height: auto;
+    margin: 0; }
+  aside div h3 {
+    font-family: 'Oswald Bold', sans-serif;
+    text-transform: uppercase; }
+    aside div h3:not(:nth-child(2)) {
+      margin-top: 20px; }
+  aside div ul:not(.browser-default) li {
+    list-style-type: disc;
+    margin-left: 35px; }
+  aside div .sponsorer {
+    text-align: center; }
+    aside div .sponsorer img {
+      height: 100px;
+      max-width: 100%;
+      display: block;
+      margin: auto;
+      margin-bottom: 15px; }
+
+.artikler .artikel {
+  padding-bottom: 20px; }
+
+.info {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #777777;
+  display: inline-block;
+  margin-right: 20px; }
+  .info span {
+    display: inline-block; }
+    .info span .material-icons {
+      display: inline;
+      font-size: 16px;
+      float: left;
+      margin-right: 5px;
+      margin-top: 4px; }
+
+.redaktion_h3 {
+  margin-top: 30px; }
+
+.person img {
+  width: 100%; }
+.person .person_info .navn {
+  font-size: 18px; }
+.person .person_info .mail {
+  font-size: 13px;
+  margin-bottom: 10px; }
+  .person .person_info .mail .material-icons {
+    float: left;
+    margin-top: 5px;
+    margin-right: 5px; }
+.person .person_info .tekst {
+  font-size: 14px;
+  line-height: 20px; }
+
+.kontakt_row p {
+  line-height: 20px; }
+  .kontakt_row p .material-icons {
+    font-size: 16px;
+    float: left;
+    margin-top: 2px;
+    margin-right: 5px; }
+
+/* Vis artikel styling */
+.artikel_tekst {
+  margin-top: 15px; }
+
+.redaktor {
+  margin-top: 20px; }
+  .redaktor img {
+    max-width: 100%; }
+  .redaktor .navn {
+    font-size: 18px; }
+    .redaktor .navn span {
+      font-size: 15px;
+      color: #777777; }
+
+.kommentar div {
+  display: inline-block; }
+.kommentar .icon {
+  width: 30px;
+  box-sizing: border-box;
+  float: left; }
+  .kommentar .icon .material-icons {
+    font-size: 30px; }
+.kommentar .besked {
+  width: calc(100% - 30px);
+  padding-left: 10px; }
+  .kommentar .besked .navn {
+    font-size: 17px; }
+.kommentar .thin {
+  margin-top: 20px;
+  margin-bottom: 15px; }
+
+.kommentar_h2 {
+  margin-top: 40px; }
+
+/* Pagination styling */
+.paginations ul li {
+  display: inline-block; }
+  .paginations ul li a {
+    color: #777777;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #e6e6e6;
+    margin-right: 10px;
+    line-height: 40px;
+    text-align: center;
+    font-family: "Oswald", sans-serif; }
+    .paginations ul li a:hover {
+      background-color: #ffc000;
+      color: #ffffff; }
+
+.paginations ul li.active a {
+  background-color: #ffc000;
+  color: #ffffff; }
+
+/* Sponsor styling */
+table {
+  margin-top: 20px; }
+  table tr {
+    height: 30px; }
+    table tr th {
+      font-family: "Open Sans Bold", sans-serif;
+      border-bottom: 2px solid #e6e6e6;
+      padding: 10px 5px; }
+      table tr th i {
+        font-size: 12px;
+        float: left;
+        margin-right: 5px; }
+    table tr td {
+      text-align: right;
+      border-bottom: 1px solid #e6e6e6;
+      padding: 10px 5px; }
+
+.footer_container {
+  padding: 0; }
+
+footer {
+  background-color: #353537;
+  color: #ffffff;
+  padding: 30px 20px; }
+  footer h3 {
+    margin-bottom: 15px; }
+  footer .bold {
+    font-weight: bold; }
+  footer address {
+    font-style: normal; }
+  footer form .row div input {
+    box-sizing: border-box;
+    margin-bottom: 0; }
+  footer form .row .input-field button {
+    float: left;
+    font-family: "Oswald Bold", sans-serif;
+    text-transform: uppercase; }
+  footer form .fejlbesked {
+    font-style: italic;
+    line-height: 20px;
+    color: #d23030; }
+  footer form .success {
+    font-style: italic;
+    line-height: 20px;
+    color: #ffc000; }
+
+.soeg_besked {
+  margin-left: 10px;
+  margin-bottom: 20px; }
+  .soeg_besked span {
+    font-size: 20px; }
+
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 85%; } }
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 62%; } }
+
+/*# sourceMappingURL=front-css.css.map */

@@ -36,7 +36,7 @@ men det er fordi indholdet bliver hentet ind på index-filen, hvor de to ting er
           $mail = $_POST['mail'];
           $besked = $_POST['besked'];
 
-          mail('michellereneejensen@hotmail.com', $emne, 'Besked: '. $besked . ' Fra: '. $navn, 'From: '.$mail);
+          mail('michellereneejensen@hotmail.com', $emne, 'Besked: '. $besked . ' Hilsen  '. $navn, 'From: '.$mail);
           $success = '<p class="kontakt-success-besked">Beskeden blev sendt!</p>';
           $fejlbesked = '';
         }

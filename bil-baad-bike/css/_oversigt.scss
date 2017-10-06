@@ -1,0 +1,380 @@
+/* Table styling */
+table{
+  border-top: 2px solid $border;
+
+  th, td{
+    border-bottom: 2px solid $border;
+  }
+
+  tr:nth-child(even){
+    background-color: lighten($border, 5%);
+  }
+
+  th:first-child, td:first-child, th:last-child, td:last-child{
+    padding-left: 5px;
+  }
+
+  .ret_slet{
+    width: 50px;
+    text-align: center;
+
+    i{
+      color: $white;
+
+      &:hover{
+        color: $dark_blue;
+      }
+    }
+
+    img{
+      width: 25px;
+      display: block;
+      margin-left: 10px;
+      background-color: $light_bg;
+      border-radius: 50%;
+      padding: -5px;
+
+      &:hover{
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .super_admin_gendan{
+    width: 106px;
+    text-align: center;
+
+    a i{
+      color: $red;
+
+      &:hover{
+        color: $dark_blue;
+      }
+    }
+  }
+
+  th.super_admin_gendan{
+    a i{
+      font-weight: 400;
+      color: $white;
+
+    }
+    &:hover a, &:hover i{
+      color: $light_blue;
+    }
+  }
+
+  .table_billeder{
+    a{
+      color: $white;
+
+      .count{
+        width: 20px;
+        height: 20px;
+        float: left;
+        margin-left: -10px;
+        line-height: 22px;
+        display: inline-block;
+        background-color: $purple;
+        @include border-radius(50%);
+
+        p{
+          font-size: 1.2rem;
+          display: block;
+          line-height: 21px;
+          color: $white;
+        }
+      }
+
+      span i{
+        width: auto;
+        float: left;
+        font-weight: normal;
+      }
+
+      &:hover i{
+        color: $dark_blue;
+      }
+
+      &:hover .count{
+        background-color: $dark_blue;
+      }
+    }
+  }
+}
+
+
+/* Opret og tilbage links ved oversigter */
+.opret_tilbage{
+  display: block;
+  height: 25px;
+  margin-bottom: 30px;
+
+  .opret, .tilbage{
+    display: block;
+    float: right;
+
+    &:hover p, &:hover i{
+      color: $white;
+    }
+  }
+
+  .opret p, .opret i, .tilbage p, .tilbage i{
+    display: inline-block;
+    color: $light_blue;
+    float: left;
+  }
+
+  .opret p{
+    margin-right: 3px;
+  }
+
+  .opret i{
+    clear: right;
+  }
+}
+
+/* Ret billeder link ved ret produkt */
+.ret_billeder{
+  display: block;
+  margin-bottom: 30px;
+  margin-top: 20px;
+
+  .billede{
+    float: right;
+
+    img{
+      width: 40px;
+      display: block;
+      margin: auto;
+      margin-bottom: 5px;
+    }
+
+    p{
+      color: $white;
+    }
+  }
+}
+
+
+/* Oversigt sorter efter styling */
+.sorter_efter{
+  float: left;
+  width: 100%;
+
+  select{
+    width: 100%;
+  }
+}
+
+
+/* Søg styling */
+.oversigt_soeg{
+  margin-bottom: 30px;
+  float: right;
+
+  input[type=search]{
+    margin: 0;
+    float: left;
+  }
+
+  input[type=submit]{
+    margin: 0;
+    padding: 0;
+    float: left;
+  }
+}
+
+/* Vis pr. side form styling */
+.vis_pr_side_form{
+  margin-left: 0;
+  margin-top: 10px;
+
+  p{
+    display: inline-block;
+  }
+
+  select{
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+/* Viser pr. side styling */
+.vis_ud_af_hvor_mange{
+  display: inline-block;
+  float: left;
+  padding-left: 5px;
+
+  p span{
+    font-weight: bold;
+  }
+}
+
+
+/* Pagination styling */
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+  .pagination{
+    height: 40px;
+    list-style: none;
+
+    ul{
+      float: right;
+      // border: 1px solid $border;
+
+      li{
+        display: inline-block;
+        border: 2px solid $border;
+        border-left: 1px solid $border;
+        border-right: 1px solid $border;
+        width: 40px;
+        height: 40px;
+        float: left;
+        text-align: center;
+        line-height: 40px;
+        border-collapse: collapse;
+        margin-bottom: 0;
+        background-color: $dark_bg;
+
+        a{
+          color: $white;
+          display: block;
+        }
+
+        i{
+          display: block;
+          margin-top: 8px;
+          font-weight: normal;
+        }
+
+        &:hover{
+          background-color: lighten($dark_bg, 5%);
+        }
+
+        &:first-child{
+          border-left: 2px solid $border;
+        }
+
+        &:last-child{
+          border-right: 2px solid $border;
+        }
+      }
+
+      .active{
+        background-color: lighten($dark_bg, 5%);
+      }
+    }
+  }
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
+
+
+/* Logbog styling */
+.logbog_info, .logbog_opdatering, .logbog_oprettelse, .logbog_sletning{
+  padding: 3px 5px 3px 5px;
+  @include border-radius(4px);
+}
+.logbog_info{
+  background-color: $dark_blue;
+}
+
+.logbog_opdatering{
+  background-color: $purple;
+}
+
+.logbog_oprettelse{
+  background-color: $green;
+}
+
+.logbog_sletning{
+  background-color: $red;
+}
+
+// Sorter efter nyeste eller ældste (dato)
+.sortable {
+  a{
+    color: $white;
+
+    i{
+      float: left;
+      font-weight: normal;
+    }
+
+    &:hover{
+      color: $light_blue;
+    }
+  }
+
+}
+
+.sortable-handle{
+  cursor: all-scroll;
+}
+
+.sponsor_link{
+  margin-bottom: 5px;
+
+}
+
+.mini_kommentar_overskrift{
+  h1{
+    margin-bottom: 0;
+  }
+  p{
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+}
+
+
+.deaktiver{
+  opacity: 0.2;
+  cursor: default;
+
+  &:hover img:hover{
+    opacity: 1;
+  }
+  &:hover i:hover{
+    color: #ffffff;
+  }
+}
+
+.modal{
+  display: none;
+  z-index: 1;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+

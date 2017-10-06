@@ -1,0 +1,501 @@
+@font-face {
+  font-family: Oswald;
+  src: url(../fonts/Oswald/Oswald-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Oswald Bold';
+  src: url(../fonts/Oswald/Oswald-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url(../fonts/Open_Sans/OpenSans-Bold.ttf);
+}
+
+/* Colours */
+$yellow: #ffc000;
+$red: #801c1c;
+$darkgray: #353537;
+$middlegray: #777777;
+$lightgray1: #e6e6e6;
+$lightgray2: #f0f0f0;
+$white: #ffffff;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: $lightgray2;
+  color: $darkgray;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Videre-styling af materialize's styling på .container */
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+  background-color: $white;
+  min-height: 200px;
+  padding: 20px;
+}
+
+h1{
+  font-size: 36px;
+  font-family: 'Oswald Bold', serif;
+  text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+h2{
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h3{
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 10px;
+  /* Oswald i grå box, Open Sans i footer*/
+}
+
+p{
+  font-size: 14px;
+  line-height: 25px;
+}
+
+a{
+  color: $darkgray;
+  text-decoration: none;
+
+  &:hover{
+    color: $red;
+  }
+}
+
+hr{
+  border: 2px solid $darkgray;
+  margin-bottom: 10px;
+}
+
+hr.thin{
+  border: 1px solid $lightgray2;
+  border-bottom: none;
+  margin-bottom: 20px;
+}
+
+.laes_mere{
+  display: block;
+  margin-top: 20px;
+
+  a{
+    padding: 10px 30px;
+    background-color: $lightgray1;
+    color: $middlegray;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+
+    &:hover{
+      background-color: $red;
+      color: $lightgray2;
+    }
+  }
+}
+.darker{
+  color: $darkgray;
+}
+
+
+@import "front-form";
+
+form p.fejlbesked{
+  font-style: italic;
+  color: $red;
+}
+
+form p.success{
+  font-style: italic;
+  color: darken($yellow, 10%);
+}
+
+.space_left{
+  margin-left: 20px;
+}
+
+header{
+  margin-bottom: 40px;
+}
+
+nav{
+  background-color: $darkgray;
+  box-shadow: none;
+  height: 55px;
+  line-height: 55px;
+  border-bottom: 4px solid $yellow;
+  margin-bottom: 20px;
+
+  a{
+    font-family: 'Open Sans Bold', sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0px 10px;
+    height: 55px;
+
+    .material-icons{
+      display: inline;
+      font-size: 16px;
+      float: left;
+      margin-right: 3px;
+    }
+
+    &:hover{
+      background-color: $yellow;
+      color: $white;
+    }
+  }
+
+  .active{
+    background-color: $yellow;
+  }
+}
+
+main div{
+  .breadcrumb{
+    margin-bottom: 20px;
+
+   span{
+     color: $darkgray;
+   }
+
+    span:not(:first-child)::before{
+      content: '/';
+      margin-right: 5px;
+    }
+
+    span:last-child{
+      color: $middlegray;
+    }
+  }
+}
+
+aside div{
+  background-color: $lightgray2;
+  padding: 10px 20px;
+
+  button{
+    line-height: 58px;
+  }
+
+  .row{
+    height: auto;
+    margin: 0;
+  }
+
+  h3{
+    font-family: 'Oswald Bold', sans-serif;
+    text-transform: uppercase;
+
+    &:not(:nth-child(2)){
+      margin-top: 20px;
+    }
+  }
+
+  ul:not(.browser-default) li{
+    list-style-type: disc;
+    margin-left: 35px;
+  }
+
+  .sponsorer{
+    text-align: center;
+
+    img{
+      height: 100px;
+      max-width: 100%;
+      display: block;
+      margin: auto;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.artikler{
+  .artikel{
+    padding-bottom: 20px;
+  }
+}
+
+.info{
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: $middlegray;
+  display: inline-block;
+  margin-right: 20px;
+
+  span{
+    display: inline-block;
+
+    .material-icons{
+      display: inline;
+      font-size: 16px;
+      float: left;
+      margin-right: 5px;
+      margin-top: 4px;
+    }
+  }
+}
+
+.redaktion_h3{
+  margin-top: 30px;
+}
+
+.person{
+  img{
+    width: 100%;
+  }
+
+  .person_info{
+    .navn{
+      font-size: 18px;
+    }
+
+    .mail{
+      font-size: 13px;
+      margin-bottom: 10px;
+
+      .material-icons{
+        float: left;
+        margin-top: 5px;
+        margin-right: 5px;
+      }
+    }
+
+    .tekst{
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+
+.kontakt_row{
+  p{
+    line-height: 20px;
+
+    .material-icons{
+      font-size: 16px;
+      float: left;
+      margin-top: 2px;
+      margin-right: 5px;
+    }
+  }
+}
+
+/* Vis artikel styling */
+.artikel_tekst{
+  margin-top: 15px;
+}
+
+.redaktor{
+  margin-top: 20px;
+
+  img{
+    max-width: 100%;
+  }
+
+  .navn{
+    font-size: 18px;
+
+    span{
+      font-size: 15px;
+      color: $middlegray;
+    }
+  }
+}
+
+.kommentar{
+  div{
+    display: inline-block;
+  }
+
+  .icon{
+    width: 30px;
+    box-sizing: border-box;
+    float: left;
+
+    .material-icons{
+      font-size: 30px;
+    }
+  }
+
+  .besked{
+    width: calc(100% - 30px);
+    padding-left: 10px;
+
+    .navn{
+      font-size: 17px;
+    }
+  }
+
+  .thin{
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+.kommentar_h2{
+  margin-top: 40px;
+}
+
+/* Pagination styling */
+.paginations{
+  ul li{
+    display: inline-block;
+
+    a{
+      color: $middlegray;
+      display: block;
+      width: 40px;
+      height: 40px;
+      background-color: $lightgray1;
+      margin-right: 10px;
+      line-height: 40px;
+      text-align: center;
+      font-family: "Oswald", sans-serif;
+
+      &:hover{
+        background-color: $yellow;
+        color: $white;
+      }
+    }
+
+
+  }
+}
+.paginations ul li.active a{
+  background-color: $yellow;
+  color: $white;
+}
+
+/* Sponsor styling */
+table{
+  margin-top: 20px;
+
+  tr{
+    height: 30px;
+
+    th{
+      font-family: "Open Sans Bold", sans-serif;
+      border-bottom: 2px solid $lightgray1;
+      padding: 10px 5px;
+
+      i{
+        font-size: 12px;
+        float: left;
+        margin-right: 5px;
+      }
+    }
+
+    td{
+      text-align: right;
+      border-bottom: 1px solid $lightgray1;
+      padding: 10px 5px;
+    }
+  }
+}
+
+
+.footer_container{
+  padding: 0;
+}
+
+footer{
+  background-color: $darkgray;
+  color: $white;
+  padding: 30px 20px;
+
+  h3{
+    margin-bottom: 15px;
+  }
+
+  .bold{
+    font-weight: bold;
+  }
+
+  address{
+    font-style: normal;
+  }
+
+  form{
+    .row{
+      div{
+        input{
+          box-sizing: border-box;
+          margin-bottom: 0;
+        }
+      }
+      .input-field{
+        button{
+          float: left;
+          font-family: "Oswald Bold", sans-serif;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .fejlbesked{
+      font-style: italic;
+      line-height: 20px;
+      color: lighten($red, 20%);
+    }
+
+    .success{
+      font-style: italic;
+      line-height: 20px;
+      color: $yellow;
+    }
+  }
+}
+
+.soeg_besked{
+  margin-left: 10px;
+  margin-bottom: 20px;
+
+  span{
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 601px){
+  .container {
+    width: 85%;
+  }
+}@media only screen and (min-width: 993px){
+  .container {
+    width: 62%;
+  }
+}
+

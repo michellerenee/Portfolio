@@ -31,10 +31,10 @@ men det er fordi indholdet bliver hentet ind på index-filen, hvor de to ting er
     </figure>
   </a>
 
-  <a class="figure" href="#">
+  <a class="figure" href="./?side=projekt-cms">
     <figure>
-      <img>
-      <figcaption class="fourth"></figcaption>
+      <img src="../img/cms-sm.jpg" alt="Billede af min CMS forside">
+      <figcaption class="fourth"><h1>Mini CMS system</h1></figcaption>
     </figure>
   </a>
 

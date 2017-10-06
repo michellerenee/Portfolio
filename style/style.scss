@@ -369,6 +369,14 @@ input, textarea{
   }
 }
 
+.img-link img{
+  box-shadow: 5px 5px 15px #bdbdbd;
+
+  &:hover{
+    box-shadow: 5px 5px 15px #636363;
+  }
+}
+
 // Footer styling
 footer{
   width: 100%;

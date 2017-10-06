@@ -1,0 +1,68 @@
+header{
+  background-color: $light_bg;
+  min-height: 100px;
+  line-height: 90px;
+
+  .logo{
+    max-height: 90px;
+    width: auto;
+
+    img{
+      width: auto;
+      max-height: 55px;
+      max-width: 100%;
+      margin-top: 20px;
+      opacity: 1;
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+    }
+
+    &:hover img{
+      opacity: .5;
+    }
+  }
+
+  .log_info{
+    height: 90px;
+    color: $white;
+    line-height: normal;
+    text-align: right;
+    padding-top: 15px;
+    padding-bottom: 20px;
+
+    p{
+      font-size: 1.8rem;
+      margin-bottom: 3px;
+
+      span{
+        font-weight: bold;
+      }
+    }
+
+    a{
+      display: block;
+      color: $white;
+      float: right;
+      clear: right;
+
+      i, p{
+        float: left;
+      }
+
+      i{
+        font-weight: normal;
+        font-size: 1.8rem;
+        margin-left: 5px;
+      }
+
+      p{
+        clear: left;
+        font-size: 1.5rem;
+      }
+
+      &:hover{
+        color: $light_blue;
+      }
+    }
+  }
+}
