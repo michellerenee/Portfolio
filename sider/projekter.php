@@ -19,15 +19,15 @@ men det er fordi indholdet bliver hentet ind på index-filen, hvor de to ting er
 
   <a class="figure" href="./?side=projekt-foto">
     <figure>
-      <img src="../img/nyhavn2.jpg" alt="Billede af Nyhavn jeg har redigeret">
+      <img src="../img/nyhavn2-sm.jpg" alt="Billede af Nyhavn jeg har redigeret">
       <figcaption class="third"><h1>Fotoredigering</h1></figcaption>
     </figure>
   </a>
 
-  <a class="figure" href="./?side=projekt-cms">
+  <a class="figure" href="./?side=projekt-tvuge">
     <figure>
-      <img>
-      <figcaption class="first"><h1>CMS system</h1></figcaption>
+      <img src="../img/tv-festival-sm.jpg" alt="Billede af webdesignet">
+      <figcaption class="first"><h1>Webdesign tv-uge</h1></figcaption>
     </figure>
   </a>
 

@@ -24,15 +24,15 @@ men det er fordi indholdet bliver hentet ind på index-filen, hvor de to ting er
 
   <a class="figure forside-fig" href="./?side=projekt-foto">
   <figure class="">
-      <img src="../img/nyhavn2.jpg" alt="Billede af nyhavn jeg har redigeret">
+      <img src="../img/nyhavn2-sm.jpg" alt="Billede af nyhavn jeg har redigeret">
       <figcaption class="fourth"><h1>Fotoredigering</h1></figcaption>
   </figure>
   </a>
 
-  <a class="figure forside-fig" href="./?side=projekt-cms">
+  <a class="figure forside-fig" href="./?side=projekt-tvuge">
     <figure class="">
-      <img alt="Billede af mit CMS system">
-      <figcaption class="second"><h1>CMS system</h1></figcaption>
+      <img alt="Billede af tv-uge plakat" src="../img/tv-festival-sm.jpg">
+      <figcaption class="second"><h1>Webdesign tv-uge</h1></figcaption>
     </figure>
   </a>
 </section>
