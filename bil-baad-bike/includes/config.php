@@ -23,7 +23,7 @@ require 'functions.php';
 // Oplysninger til databasen
 $db_host = "mysql71.unoeuro.com";
 $db_user = "michellerenee_dk";
-$db_pass = "***REMOVED***";
+$db_pass = "eygtkwcf";
 $db_name = "michellerenee_dk_db";
 // Forbinder til databasen
 $mysqli = new mysqli($db_host, $db_user, $db_pass, $db_name);

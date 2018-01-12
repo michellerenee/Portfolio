@@ -22,7 +22,7 @@ else{
 // Oplysninger til forbindelse af database
 $db_host = "mysql71.unoeuro.com";
 $db_user = "michellerenee_dk";
-$db_pass = "***REMOVED***";
+$db_pass = "eygtkwcf";
 $db_name = "michellerenee_dk_db";
 
 // Opretter forbindelse til databasen
